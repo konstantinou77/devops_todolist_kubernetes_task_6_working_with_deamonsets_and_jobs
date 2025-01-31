@@ -6,7 +6,8 @@ metadata:
 spec:
   schedule: "*/4 * * * *"
   concurrencyPolicy: Allow
-  startingDeadlineSeconds: 10
+  startingDeadlineSeconds: 100
+  successfulJobsHistoryLimit: 10
   failedJobsHistoryLimit: 5
   jobTemplate:
     spec:

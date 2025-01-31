@@ -8,9 +8,6 @@ kubectl apply -f daemonset.yml
 kubectl get daemonset -n todoapp
 kubectl get pods -n todoapp
 
-# How to check the logs of the DaemonSet pods:
-kubectl logs <pod-name> -n todoapp
-
 # How to Deploy the CronJob to your cluster:
 kubectl apply -f cronjob.yml
 
