@@ -17,7 +17,7 @@ spec:
             - name: busybox-curl
               image: yurakolam/busyboxplus:curl
               imagePullPolicy: Always
-              command: ["/bin/sh", "-c", "curl -s http://todoapp/api/health"]
+              command: ["/bin/sh", "-c", "curl -s http://todoapp.todoapp.svc.cluster.local/api/health"]
               resources:
                 requests:
                   cpu: "100m"
